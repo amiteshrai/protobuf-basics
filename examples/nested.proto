@@ -1,0 +1,13 @@
+syntax = "proto3"
+
+message Message {
+    message AnotherMessage {
+        string greeting = 1;
+    }
+    enum Enum {
+        UNSPECIFIED = 0;
+        SPECIFIED = 1;
+    }
+    AnotherMessage greeting = 1;
+    Enum category = 2;
+}

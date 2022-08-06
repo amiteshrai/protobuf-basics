@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Account {
+    uint32 id = 1;
+    string name = "Amitesh"
+    bool is_active = false;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3"
+
+message City {
+    string name = 1;
+    string zipcode = 2;
+    enum Country {
+        UNSPECIFIED = 0;
+        INDIA = 1;
+        // .. remaining
+    }
+    Country country = 3;
+}
+
+message Street {
+    string name = 1;
+    City city = 2;
+}
+
+message Building {
+    string name = 1;
+    uint32 number = 2;
+    uint32 floor = 3;
+    Street street = 4;
+}
+
+message Address {
+    City city = 1;
+    Street street = 2;
+    Building building = 3;
+}

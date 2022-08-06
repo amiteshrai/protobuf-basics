@@ -1,0 +1,17 @@
+syntax = "proto3"
+
+message Message {
+
+}
+
+enum Enum {
+    UNSPECIFIED = 0;
+    SPECIFIED = 1;
+    //...
+}
+
+// This message references other messages and enums in this file.
+message AnotherMessage {
+    Message message = 1;
+    Enum enum = 2;
+}

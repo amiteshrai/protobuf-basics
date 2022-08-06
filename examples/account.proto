@@ -1,0 +1,17 @@
+syntax = "proto3"
+
+enum EyeColor {
+    UNSPECIFIED = 0;
+    GEEN = 1;
+    BLUE = 2;
+    BROWN = 3;
+}
+message Account {
+    uint32 id = 1;
+    string name = 2;
+    bytes thumbnail = 3;
+    bool is_active = 4;
+    float height = 5;
+    repeated string phones = 6;
+    EyeColor eye_color = 7;
+}

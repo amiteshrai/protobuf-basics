@@ -1,0 +1,7 @@
+syntax = "proto3"
+import "same_level.proto"
+
+message ImportedMessage {
+    Message message = 1;
+    AnotherMessage another_message = 2;
+}
