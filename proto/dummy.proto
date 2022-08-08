@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package example.dummy;
+
+option go_package = "github.com/amiteshrai/protobuf-basics/proto";
+
+message Dummy {
+	uint32 id = 1;
+}

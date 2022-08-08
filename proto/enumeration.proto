@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example.enumeration;
+
+option go_package = "github.com/amiteshrai/protobuf-basics/proto";
+
+enum EyeColor {
+	UNSPECIFIED = 0;
+	BLUE = 1;
+	BROWN = 2;
+	GREEN = 3;
+}
+
+message Enumeration {
+	EyeColor eye_color = 1;
+}
