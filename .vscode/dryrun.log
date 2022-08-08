@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/fintech/Workspaces/Personal/Code/protobuf-basics'
+make: Leaving directory `/Users/fintech/Workspaces/Personal/Code/protobuf-basics'
+ 
+Makefile:1: *** missing separator.  Stop.
+

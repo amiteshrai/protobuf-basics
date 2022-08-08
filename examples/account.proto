@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 enum EyeColor {
     UNSPECIFIED = 0;
@@ -6,6 +6,7 @@ enum EyeColor {
     BLUE = 2;
     BROWN = 3;
 }
+
 message Account {
     uint32 id = 1;
     string name = 2;
